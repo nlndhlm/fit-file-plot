@@ -2,11 +2,7 @@ import fitparse
 import datetime
 import matplotlib.pyplot as plt
 
-
-
 f = fitparse.FitFile('fil3.fit')
-
-
 
 date = None
 
@@ -31,14 +27,12 @@ for record in f.get_messages("record"):
         position_long.append(record.get_value('position_long'))
         position_lat.append(record.get_value('position_lat'))
         
-
 # print ut denne for å se oversikten over values
 print(record.get_values())
 
 # regne ut snittverdier av fart og puls, må gjøres etter loopen
 avg_speed = str(round(sum(speed) / len(speed), 2))
 avg_heart_rate = str(round(sum(heart_rate) / len(heart_rate), 2))
-
 
 
 # PLOTTING
@@ -72,7 +66,5 @@ plt.grid(axis='y')
 plt.xlabel('Meter')
 plt.ylabel('Høydemeter')
 plt.plot(dist, height)
-
-
 
 plt.show()
