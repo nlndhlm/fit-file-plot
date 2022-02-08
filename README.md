@@ -1,12 +1,12 @@
-# fit-file-plot
+# Fit-plotter
 
-First Price Strava: Plotter treningsdata fra .fit-filer vha matplotlib.
+Script som plotter Garmin sin .fit filer med matplotlib.
 
 ## Foreløpig
 Plotter puls, fart (min/km), høydeprofil og GPS.
 
 Testet ut med .fit-filer fra min Garmin 245.
-Kun testet løpeøker.
+Kun testet løpeøkter.
 
 ## Videre forbedring
  - Legge til kart i bakgrunnen av GPS-plottet (openstreetmap?)
