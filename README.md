@@ -1,6 +1,6 @@
 # Fit-plotter
 
-Script som plotter Garmin sin .fit filer med matplotlib.
+Script som plotter Garmin sine .fit-filer med matplotlib.
 
 ## Foreløpig
 Plotter puls, fart (min/km), høydeprofil og GPS.
